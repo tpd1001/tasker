@@ -1,4 +1,7 @@
-export PATH=$PATH:/data/data/burrows.apps.busybox/app_busybox; export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/data/burrows.apps.busybox/app_busybox
+# you can download the busybox app and run this script from within there
+# this was the original usage and required the following
+# PATH and LD_LIBRARY_PATH modifications
+#export PATH=$PATH:/data/data/burrows.apps.busybox/app_busybox; export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/data/burrows.apps.busybox/app_busybox
 
 thing="-"
 test -n "$1" && thing=$1
