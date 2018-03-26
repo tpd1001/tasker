@@ -2,9 +2,12 @@ export PATH=$PATH:/data/data/burrows.apps.busybox/app_busybox; export LD_LIBRARY
 
 thing="-"
 test -n "$1" && thing=$1
-for x in `grep -i "$thing" $0|sed 's/ //g'|cut -d- -f2|grep "^ *\/"`
+for x in $(grep -i "$thing" $0 2>/dev/null | \
+           sed 's/ //g;s/\*/file/' 2>/dev/null | \
+           cut -d- -f2 2>/dev/null | \
+           grep "^ *\/" 2>/dev/null)
 do
-d=`dirname $x`
+d=$(dirname $x 2>/dev/null)
 test -d $d || $FAKE mkdir -p $d
 done
 
