@@ -8,10 +8,13 @@ for x in $(grep -i "$thing" $0 2>/dev/null | \
            grep "^ *\/" 2>/dev/null)
 do
 d=$(dirname $x 2>/dev/null)
-test -d $d || $FAKE mkdir -p $d
+test -d $d && echo "dir exists: $d" >&2 || $FAKE mkdir -p $d
 done
 
 exit
+
+# The path (second hyphen separated field) must begin with
+# a forward slash and end with a file name or forward slash
 
 AutoRemote Groups - /storage/emulated/0/AutoRemoteLite/channels/
 Barcode Bank - /sdcard/barcodebank.xml
