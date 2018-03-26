@@ -3,6 +3,8 @@
 # PATH and LD_LIBRARY_PATH modifications
 #export PATH=$PATH:/data/data/burrows.apps.busybox/app_busybox; export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/data/burrows.apps.busybox/app_busybox
 
+Verbose()  { if [ "$VERBOSE" = "1" ]; then echo -e "$@" ; fi; }
+
 thing="-"
 test -n "$1" && thing=$1
 for x in $(grep -i "$thing" $0 2>/dev/null | \
@@ -11,7 +13,8 @@ for x in $(grep -i "$thing" $0 2>/dev/null | \
            grep "^ *\/" 2>/dev/null)
 do
 d=$(dirname $x 2>/dev/null)
-test -d $d && echo "dir exists: $d" >&2 || $FAKE mkdir -p $d
+test -d $d && Verbose "dir exists:  $d" >&2 || {
+              Verbose "created dir: $d";$FAKE mkdir -p $d; }
 done
 
 exit
