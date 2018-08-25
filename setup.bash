@@ -11,18 +11,23 @@ Debug(){ case "$DEBUG" in
  x)set -x;DEBUG=;;
 esac; }
 
+# fixup the Tasker array passed in by the Run Script action
 SETTINGS=$(echo $SETTINGS|sed 's/ /-/g' 2>/dev/null)
+# extract the device name from cell two of the settings array
 DEVICE=$(echo $SETTINGS|cut -d, -f2)
 # we don't really want to exit with a non-zero code as this bombs
 # the Tasker task to error which is more tricky to handle
 test -n "$DEVICE" || { echo '$DEVICE not set' >&2;exit 0;  }
+# define the thing to match on to extract the paths
 thing=" - "
 test -n "$1" && thing=$1
+# turn all the app backup paths/files into consistent dir names
 for x in $(grep -i "$thing" $0 2>/dev/null | \
            sed 's/ //g;s/\*/file/' 2>/dev/null | \
            cut -d- -f2 2>/dev/null | \
            grep "^ *\/" 2>/dev/null)
 do
+# substitute the DEVICE tag for the device specific name
 d=$(dirname $x 2>/dev/null|sed "s|DEVICE|$DEVICE|")
 test -d $d && Verbose "dir exists:  $d" >&2 || {
               Verbose "created dir: $d";$FAKE mkdir -p $d; }
