@@ -13,6 +13,9 @@ esac; }
 
 SETTINGS=$(echo $SETTINGS|sed 's/ /-/g' 2>/dev/null)
 DEVICE=$(echo $SETTINGS|cut -d, -f2)
+# we don't really want to exit with a non-zero code as this bombs
+# the Tasker task to error which is more tricky to handle
+test -n "$DEVICE" || { echo '$DEVICE not set' >&2;exit 0;  }
 thing=" - "
 test -n "$1" && thing=$1
 for x in $(grep -i "$thing" $0 2>/dev/null | \
