@@ -30,6 +30,8 @@ exit
 # The path (second hyphen separated field) must begin with
 # a forward slash and end with a file name or forward slash
 
+App Configs From Internal Storage Root - /storage/emulated/0/AppConfigsFromIntStorageRoot/
+AppList - /storage/emulated/0/AppList/
 AutoRemote Groups - /storage/emulated/0/AutoRemoteLite/channels/
 Barcode Bank - /sdcard/barcodebank.xml
 Drivesync - /storage/emulated/0/Drivesync/backup/DrivesyncSettings.bkp
@@ -39,7 +41,8 @@ Fing - /storage/emulated/0/overlook/fing/backup/
 FolderSync - /sdcard/Android/data/dk.tacit.android.foldersync.full/files/backup/DEVICE/variable_file_name
 gReader - /sdcard/gReader/backup/
 Informant - /sdcard/PocketInformant/
-Jump - /storage/emulated/0/Download/* - (Export, use ES save to, changeable)
+Jump - /storage/emulated/0/Jump/JumpDesktopServers.jdz - (Export, use ES save to, /sdcard/Jump, changeable)
+KLWP - /storage/emulated/0/Kustom/wallpapers/*
 LightFlow - /sdcard/lightflow/<date> - (configurable)
 List My Apps - /sdcard/AppList/DEVICE/configurable - (Export, use ES save to, changeable)
 Metam - /sdcard/Download/MetamBackup.zip - (Share with ES Save to... Download)
@@ -49,15 +52,14 @@ Notification Toggle - /sdcard/Android/data/de.j4velin.notificationToggle/files/b
 Nova Launcher - /sdcard/data/com.teslacoilsw.launcher/backup/DEVICE/variable_file_name
 Ovuview - /sdcard/ovuview/backup/backup*.ovu
 Ping HostMonitor - /sdcard/Android/data/se.ping.android.hostmonitor/files/hosts.ser
-Podkicker Pro - /storage/emulated/0/podkicker_backup.opml
+Pocket Informant - /storage/emulated/0/PocketInformant/
+Podkicker Pro - /storage/emulated/0/Android/data/com.podkicker/files/podkicker_backup.opml
 Port Knocker - /storage/emulated/0/PortKnocker/hosts-<date>-<time>.json
-Serverauditor - /storage/emulated/0/Serverauditor/SshKeys/*
+Seasame Shortcuts - /storage/emulated/0/data/ninja.seasame.app.edge/backups/YYYY-MM-DD_hh.mm.ss.seasamebak
 Tasker - /storage/emulated/0/Tasker/userbackup.xml
 Tasker profiles - /storage/emulated/0/Tasker/profiles/*
 Tasker tasks - /storage/emulated/0/Tasker/tasks/*
+Termius - /storage/emulated/0/Termius/SshKeys/*
 Trigger - /sdcard/Trigger/Backup.json
-WiFi Analyser - /storage/emulated/0/WifiAnalyzer_Alias.txt
-WiFi Analyser - /storage/emulated/0/WifiAnalyzer/WifiAnalyzer_Alias.txt - (synced here by FolderSync)
-
+WiFi Analyser - /storage/emulated/0/WifiAnalyzer/WifiAnalyzer_Alias.txt - (app saves to /storage/emulated/0/WifiAnalyzer_Alias.txt, synced here by FolderSync)
 WoL Wake On LAN WAN - /sdcard/WoLANWAN/WoLANWAN.csv
-/storage/emulated/0/AppConfigsFromIntStorageRoot/* - (synced here by FolderSync)
