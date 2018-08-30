@@ -39,7 +39,6 @@ exit
 # a forward slash and end with a file name or forward slash
 
 App Configs From Internal Storage Root - /storage/emulated/0/AppConfigsFromIntStorageRoot/
-AppList - /storage/emulated/0/AppList/
 AutoRemote Groups - /storage/emulated/0/AutoRemoteLite/channels/
 Barcode Bank - /sdcard/barcodebank.xml
 Drivesync - /storage/emulated/0/Drivesync/backup/DrivesyncSettings.bkp
@@ -55,10 +54,10 @@ LightFlow - /sdcard/lightflow/<date> - (configurable)
 List My Apps - /sdcard/AppList/DEVICE/configurable - (Export, use ES save to, changeable)
 Metam - /sdcard/Download/MetamBackup.zip - (Share with ES Save to... Download)
 Minimalistic Text - /sdcard/MinimalisticTextPreferences/* - (have to backup each widget individually, spaces in names get squashed, no global settings backup)
-MyBackup Pro - /sdcard/rerware/* - backup data, select all, deselect APNs
+MyBackup Pro - /sdcard/rerware/* - backup data, select all, deselect APNs & Alarms
 Notification Toggle - /sdcard/Android/data/de.j4velin.notificationToggle/files/backup/* - (backup some settings, but should be handled by Google)
 Nova Launcher - /sdcard/data/com.teslacoilsw.launcher/backup/DEVICE/variable_file_name
-Ovuview - /sdcard/ovuview/backup/backup*.ovu
+Ovuview - /sdcard/ovuview/backup/backup*.ovu - (Hamburger > Export, untick chart images, not ES Save To, use FileManager+, Download, ovuview-data.csv)
 Ping HostMonitor - /sdcard/Android/data/se.ping.android.hostmonitor/files/hosts.ser
 Pocket Informant - /storage/emulated/0/PocketInformant/
 Podkicker Pro - /storage/emulated/0/Android/data/com.podkicker/files/podkicker_backup.opml
