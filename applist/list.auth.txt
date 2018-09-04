@@ -1,0 +1,4 @@
+com.android.keepass
+com.yubico.yubioath
+org.fedorahosted.freeotp
+#com.azure.authenticator

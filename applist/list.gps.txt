@@ -1,0 +1,7 @@
+com.google.android.projection.gearhead
+com.waze
+com.strava
+com.garmin.android.apps.connectmobile
+com.parkmobile
+#com.fsp.android.friendlocator
+#com.funreality.software.nativefindmyiphone.lite
