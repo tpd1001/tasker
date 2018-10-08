@@ -1,1 +1,2 @@
 com.azure.authenticator
+com.slack

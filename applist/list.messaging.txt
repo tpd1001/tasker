@@ -1,3 +1,4 @@
 com.google.android.talk
 com.google.android.apps.messaging
 com.whatsapp
+com.zegoggles.smssync
