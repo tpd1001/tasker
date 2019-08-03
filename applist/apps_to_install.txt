@@ -1,0 +1,15 @@
+com.joaomgcd.autoremote
+com.joaomgcd.autobarcode.lite
+com.google.android.diskusage
+com.MarksThinkTank.WaveControlPro
+com.haxor
+com.laptopfreek0.sshplugin.paid
+com.yubico.yubioauth
+com.barclays.android.barclaysmobilebanking
+com.ctxwidget
+ru.org.amip.ClockSync
+com.google.android.apps.adm
+de.dieterthiess.ipwidget
+com.android.keepass
+com.rerware.android.MyBackupPro
+com.dropbox.android
