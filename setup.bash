@@ -41,10 +41,12 @@ exit
 
 App Configs From Internal Storage Root - /storage/emulated/0/AppConfigsFromIntStorageRoot/
 AutoBarcode - /storage/emulated/0/AutoBarcode/
+AutoLocation - /storage/emulated/0/AutoLocation/
 AutoNotification - /storage/emulated/0/AutoNotification/BlockFilterForDB
 AutoRemote Groups - /storage/emulated/0/AutoRemote/channels
 AutoShare Intents - /storage/emulated/0/AutoShare/intentinfo.db
 AutoWeb Services - /storage/emulated/0/AutoWeb/Api
+Backup - /storage/emulated/0/Backup
 Barcode Bank - /sdcard/barcodebank.xml
 Drivesync - /storage/emulated/0/Drivesync/backup/DrivesyncSettings.bkp
 Dropsync - /storage/emulated/0/Dropsync/backup/DropsyncSettings.bkp
@@ -55,6 +57,7 @@ gReader - /sdcard/gReader/backup/
 Informant - /sdcard/PocketInformant/
 Jump - /storage/emulated/0/Jump/JumpDesktopServers.jdz - (Export, use ES save to, /sdcard/Jump, changeable)
 KLWP - /storage/emulated/0/Kustom/wallpapers/*
+KWGT - /storage/emulated/0/Kustom/widgets/*
 LightFlow - /sdcard/lightflow/<date> - (configurable)
 List My Apps - /sdcard/AppList/DEVICE/configurable - (Export, use ES save to, changeable)
 Lithium Pro - /storage/emulated/0/LithiumBackups/
@@ -70,12 +73,14 @@ Pocket Informant - /storage/emulated/0/PocketInformant/
 Podkicker Pro - /storage/emulated/0/Android/data/com.podkicker/files/podkicker_backup.opml
 Port Knocker - /storage/emulated/0/PortKnocker/hosts-<date>-<time>.json
 Sesame Shortcuts - /storage/emulated/0/data/ninja.sesame.app.edge/backups/YYYY-MM-DD_hh.mm.ss.sesamebak
+SMSBackupRestore - /storage/emulated/0/Android/data/com.riteshsahu.SMSBackupRestore/files/*
 Tasker - /storage/emulated/0/Tasker/userbackup.xml
 Tasker scenes - /storage/emulated/0/Tasker/scenes/*
 Tasker shared - /storage/emulated/0/Tasker/shared/*
 Tasker profiles - /storage/emulated/0/Tasker/profiles/*
 Tasker projects - /storage/emulated/0/Tasker/projects/*
 Tasker tasks - /storage/emulated/0/Tasker/tasks/*
+Tasker backups - /storage/emulated/0/Tasker/configs/user/*
 Termius - /storage/emulated/0/Termius/SshKeys/*
 Trigger - /sdcard/Trigger/Backup.json
 WiFi Analyser - /storage/emulated/0/WifiAnalyzer/WifiAnalyzer_Alias.txt - (app saves to /storage/emulated/0/WifiAnalyzer_Alias.txt, synced here by FolderSync)
