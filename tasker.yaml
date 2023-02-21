@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tasker
+  name: tasker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tasker
+  template:
+    metadata:
+      labels:
+        app: tasker
+    spec:
+      containers:
+      - name: nginx
+        image: nginx-alpine
+        ports:
+        - name: http
+          #port: 60080        # listen on this port
+          containerPort: 80  # purely informational
+          #targetPort: 80     #
+          #nodePort: 80       #
+#        volumeMounts:
+#        - mountPath: "/usr/share/nginx/html"
+#          name: tasker-vol
+#      volumes:
+#      - name: tasker-vol
+#        persistentVolumeClaim:
+#          claimName: tasker-pvc

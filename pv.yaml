@@ -1,0 +1,28 @@
+---
+# https://www.linuxtechi.com/configure-nfs-persistent-volume-kubernetes/
+# https://github.com/kubernetes/examples/tree/master/staging/volumes/nfs
+# Google
+# https://www.google.com/search?q=nfs+pvc
+# https://www.google.com/search?q=mount+nfs+on+kubernetes+node
+# https://www.google.com/search?q=kubernetes+node+netboot+nfs+root
+# More NFS
+# https://stackoverflow.com/questions/53451923/kubernetes-use-nfs-persistent-volumes-with-a-root-user-in-a-pod
+# https://serverfault.com/questions/1025819/how-to-mount-nfs-file-system-in-non-root-user-in-kubernetes-pods
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: tasker-nfs-pv
+spec:
+  capacity:
+    storage: 100Mi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
+    path: /k1/pods/tasker
+    server: 192.168.0.15
