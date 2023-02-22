@@ -4,6 +4,8 @@ kind: Service
 metadata:
   annotations:
     wibble: wobble
+  labels:
+    app: tasker
   name: tasker-svc
 spec:
   #type: ClusterIP     # this is the default, only use if no external access is desired
