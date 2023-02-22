@@ -6,13 +6,19 @@ metadata:
     wibble: wobble
   name: tasker-svc
 spec:
-  #type: ClusterIP
-  #type: NodePort
-  type: LoadBalancer
+  #type: ClusterIP     # this is the default, only use if no external access is desired
+  type: NodePort
+  #type: LoadBalancer  # we do not need this because the external IP will always be the k3s container IP in docker
   selector:
     app: tasker
   ports:
   - name: http
     protocol: TCP
-    port: 60080
+    # if not specified defaults to "containerPort" on the pod
     targetPort: 80
+    # port must be unique across k3s as we only have one node
+    # check for conflict with: kubectl get events
+    port: 6080
+    # comment out to get a random assignment or specify the port accessible on the NAS IP
+    # in the range 61000-62000
+    nodePort: 61506  #61080
